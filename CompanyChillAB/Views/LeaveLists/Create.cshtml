@@ -1,0 +1,57 @@
+﻿@model CompanyABC.Models.LeaveList
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>LeaveList</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Start" class="control-label"></label>
+                <input asp-for="Start" class="form-control" />
+                <span asp-validation-for="Start" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stop" class="control-label"></label>
+                <input asp-for="Stop" class="form-control" />
+                <span asp-validation-for="Stop" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LeaveType" class="control-label"></label>
+                <select asp-for="LeaveType" class="form-control">
+                    <option value="">-- Välj en ledighet --</option>
+                    <option value="Sjukdom">Sjukdom</option>
+                    <option value="Semester">Semester</option>
+                    <option value="Ledighet utan lön">Ledighet utan lön</option>
+                    <option value="Vab">Vab</option>
+                </select>
+                <span asp-validation-for="LeaveType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employees" class="control-label"></label>
+                <select asp-for="FK_EmployeeId" class ="form-control" asp-items="ViewBag.FK_EmployeeId"></select>
+                <span asp-validation-for="FK_EmployeeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="hidden" id="registreringstid" name="registreringstid" value="<?php echo date('Y-m-d H:i:s'); ?>">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
