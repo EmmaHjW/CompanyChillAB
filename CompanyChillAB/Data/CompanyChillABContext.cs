@@ -1,7 +1,7 @@
-﻿using CompanyABC.Models;
+﻿using CompanyChillAB.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace CompanyABC.Data
+namespace CompanyChillAB.Data
 {
     public class CompanyChillABContext : DbContext
     {

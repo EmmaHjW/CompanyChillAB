@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CompanyChillAB.Migrations
 {
     /// <inheritdoc />
-    public partial class AnOtherTry : Migration
+    public partial class AnOtherTrys : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

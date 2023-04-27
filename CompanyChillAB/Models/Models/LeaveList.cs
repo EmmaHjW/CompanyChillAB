@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CompanyABC.Models
+namespace CompanyChillAB.Models
 {
     public class LeaveList // Connection Table
     {

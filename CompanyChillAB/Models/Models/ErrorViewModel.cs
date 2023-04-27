@@ -1,4 +1,4 @@
-namespace CompanyABC
+namespace CompanyChillAB
 {
     public class ErrorViewModel
     {

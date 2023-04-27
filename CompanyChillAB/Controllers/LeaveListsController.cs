@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using CompanyABC.Data;
-using CompanyABC.Models;
+using CompanyChillAB.Data;
+using CompanyChillAB.Models;
 
 namespace CompanyChillAB.Controllers
 {

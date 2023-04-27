@@ -1,3 +1,5 @@
+
+
 namespace CompanyChillAB.Models
 {
     public class ErrorViewModel
